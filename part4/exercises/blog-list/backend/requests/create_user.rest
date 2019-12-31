@@ -1,0 +1,35 @@
+post http://localhost:3001/api/users
+Content-Type: application/json
+
+# user vo
+{
+    "username": "KingKode",
+    "name": "Richard McMaster",
+    "password": "TestPassword"
+}
+
+# # username not long enough
+# {
+#     "username": "no", 
+#     "name": "User 2",
+#     "password": "TestPassword"
+# }
+
+# # password not long enough
+# {
+#     "username": "TestUser", 
+#     "name": "Username",
+#     "password": "T"
+# }
+
+# # no username
+# {
+#     "name": "TestUser",
+#     "password": "TestPassword"
+# }
+
+# # no password
+# {
+#     "username": "TestUser",
+#     "name": "TestUser"
+# }
